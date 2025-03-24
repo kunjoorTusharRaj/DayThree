@@ -17,6 +17,13 @@ public class calcluator {
             System.out.println("8. Exit");
             System.out.print("Enter your choice: ");
             int op = s.nextInt();
+            System.out.println("enter the number 1");
+            int num1 = s.nextInt(); 
+            System.out.println("enter the number 2");
+            int num2 = s.nextInt(); 
+            switch(op){
+                
+            }
         }
     }
 }
