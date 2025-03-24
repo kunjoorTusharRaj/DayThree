@@ -4,7 +4,7 @@ class one{
         try {
             System.out.println("this is class one ");
         } catch (Exception e) {
-            // TODO: handle exception
+            System.out.println(e);
         }
         
     }
