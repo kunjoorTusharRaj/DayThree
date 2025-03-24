@@ -1,8 +1,8 @@
 import java.util.Scanner;
-// added the comment to updatecal
+
 public class calcluator {
     public static void main(String[] args) {
-        while (true) {
+        while(true){
             Scanner s = new Scanner(System.in);
             System.out.println("=========================");
             System.out.println("      CALCULATOR MENU    ");
@@ -15,33 +15,21 @@ public class calcluator {
             System.out.println("6. Exponentiation (^)");
             System.out.println("7. Floor Division (//)");
             System.out.println("8. Exit");
-            System.out.print("Enter your op: ");
+            System.out.print("Enter your choice: ");
             int op = s.nextInt();
-            if (op >= 1 && op <= 7) {
-                System.out.println("enter the number 1");
-                int num1 = s.nextInt();
-                System.out.println("enter the number 2");
-                int num2 = s.nextInt();
-                switch (op) {
-                    case 1 -> System.out.println("Result: " + (num1 + num2));
-                    case 2 -> System.out.println("Result: " + (num1 - num2));
-                    case 3 -> System.out.println("Result: " + (num1 * num2));
-                    case 4 -> {
-                        if (num2 != 0)
-                            System.out.println("Result: " + (num1 / num2));
-                        else
-                            System.out.println("Error: Division by zero!");
-                    }
-                    case 5 -> System.out.println("Result: " + (num1 % num2));
-                    case 6 -> System.out.println("Result: " + Math.pow(num1, num2));
-                    case 7 -> System.out.println("Result: " + Math.floor(num1 / num2));
+            System.out.println("enter the number 1");
+            int num1 = s.nextInt(); 
+            System.out.println("enter the number 2");
+            int num2 = s.nextInt(); 
+            switch(op){
+                case 1 -> System.out.println("Result: " + (num1 + num2));
+                case 2 -> System.out.println("Result: " + (num1 - num2));
+                case 3 -> System.out.println("Result: " + (num1 * num2));
+                case 4 -> {
+                    if (num2 != 0) System.out.println("Result: " + (num1 / num2));
+                    else System.out.println("Error: Division by zero!");
                 }
-            } else if (op == 8) {
-                System.out.println("Exiting calculator. Goodbye!");
-            } else {
-                System.out.println("Invalid op! Please select a valid option.");
             }
-            System.out.println(); // Add a line break for readability
         }
     }
 }
