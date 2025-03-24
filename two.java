@@ -1,5 +1,4 @@
 public class two {
-
     public static void main(String[] args) {
         try {
             System.out.println("this is the two.java"); 
