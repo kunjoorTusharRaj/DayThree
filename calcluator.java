@@ -41,6 +41,7 @@ public class calcluator {
             } else {
                 System.out.println("Invalid op! Please select a valid option.");
             }
+            System.out.println(); // Add a line break for readability
         }
     }
 }
