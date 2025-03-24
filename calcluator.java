@@ -22,7 +22,13 @@ public class calcluator {
             System.out.println("enter the number 2");
             int num2 = s.nextInt(); 
             switch(op){
-                
+                case 1 -> System.out.println("Result: " + (num1 + num2));
+                case 2 -> System.out.println("Result: " + (num1 - num2));
+                case 3 -> System.out.println("Result: " + (num1 * num2));
+                case 4 -> {
+                    if (num2 != 0) System.out.println("Result: " + (num1 / num2));
+                    else System.out.println("Error: Division by zero!");
+                }
             }
         }
     }
