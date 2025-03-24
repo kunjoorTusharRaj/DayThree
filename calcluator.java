@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class calcluator {
     public static void main(String[] args) {
-        while(true){
+        while (true) {
             Scanner s = new Scanner(System.in);
             System.out.println("=========================");
             System.out.println("      CALCULATOR MENU    ");
@@ -18,17 +18,22 @@ public class calcluator {
             System.out.print("Enter your choice: ");
             int op = s.nextInt();
             System.out.println("enter the number 1");
-            int num1 = s.nextInt(); 
+            int num1 = s.nextInt();
             System.out.println("enter the number 2");
-            int num2 = s.nextInt(); 
-            switch(op){
+            int num2 = s.nextInt();
+            switch (op) {
                 case 1 -> System.out.println("Result: " + (num1 + num2));
                 case 2 -> System.out.println("Result: " + (num1 - num2));
                 case 3 -> System.out.println("Result: " + (num1 * num2));
                 case 4 -> {
-                    if (num2 != 0) System.out.println("Result: " + (num1 / num2));
-                    else System.out.println("Error: Division by zero!");
+                    if (num2 != 0)
+                        System.out.println("Result: " + (num1 / num2));
+                    else
+                        System.out.println("Error: Division by zero!");
                 }
+                case 5 -> System.out.println("Result: " + (num1 % num2));
+                case 6 -> System.out.println("Result: " + Math.pow(num1, num2));
+                case 7 -> System.out.println("Result: " + Math.floor(num1 / num2));
             }
         }
     }
